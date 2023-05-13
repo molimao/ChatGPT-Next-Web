@@ -83,7 +83,7 @@ const cn = {
         cs: "Čeština",
       },
     },
-    Avatar: "头像",
+    Avatar: "请选择你的头像",
     FontSize: {
       Title: "字体大小",
       SubTitle: "聊天内容的字体大小",
