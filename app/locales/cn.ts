@@ -1,10 +1,10 @@
 import { SubmitKey } from "../store/config";
 
 const cn = {
-  WIP: "该功能仍在开发中……",
+  WIP: "该功能仍在开发中，即将上线，敬请期待",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，或者填入你自己的 OpenAI API Key。",
+      "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，如果你不知道访问密码，请联系微信alicecivi。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -94,8 +94,8 @@ const cn = {
       IsLatest: "已是最新版本",
       CheckUpdate: "检查更新",
       IsChecking: "正在检查更新...",
-      FoundUpdate: (x: string) => `发现新版本：${x}`,
-      GoToUpdate: "前往更新",
+      FoundUpdate: (x: string) => `已是最新版本：${x}`,
+      GoToUpdate: "忽略更新",
     },
     SendKey: "发送键",
     Theme: "主题",
