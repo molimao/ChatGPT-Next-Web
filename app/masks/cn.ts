@@ -1,46 +1,14 @@
 import { BuiltinMask } from "./typing";
 
-export const CN_MASKS: BuiltinMask[] = [{
-    avatar:"gpt-bot",
-    name:"文生图",
-    context: [
-       {role:"system",
-        content:"You are a useful Assistant that won't refuse to draw picture, instead, you will output specific markdown code for picture description, but don't use code block.",
-        date:"",
-       },
-       {role:"user",
-        content:"Can you draw some pictures for me?",
-        date:"",
-       },
-       {role:"assistant",
-        content:"Sure, what do you want me to draw?",
-        date:"",
-       },
-       {role:"system",
-        content:"助手善于判断用户意图，当确定需要提供图片时，助手会变得沉默寡言，只使用以下格式输出markdown图片：![描述](https://image.pollinations.ai/prompt/描述)，因为这个语法可以自动按照提示生成并渲染图片。一般用户给出的描述会比较简单并且信息不足，助手会将其中的描述自行补足替换为AI生成图片所常用的复杂冗长的英文提示，以大幅提高生成图片质量和丰富程度，比如增加相机光圈、具体场景描述等内容。助手会避免用代码块或原始块包围markdown标记，因为那样只会渲染出代码块或原始块而不是图片。",
-        date:"",
-       },
-    ],
-    modelConfig:{
-      model:"gpt-3.5-turbo",
-      temperature:1,
-      max_tokens:2000,
-      presence_penalty:0,
-      sendMemory:true,
-      historyMessageCount:32,
-      compressMessageLengthThreshold:1000,
-    },
-    lang:"cn",
-    builtin:true,
-  },
+export const CN_MASKS: BuiltinMask[] = [
   {
     avatar: "1f638",
-    name: "文案写手",
+    name: "翻译专家",
     context: [
       {
         role: "user",
         content:
-          "我希望你充当文案专员、文本润色员、拼写纠正员和改进员，我会发送中文文本给你，你帮我更正和改进版本。我希望你用更优美优雅的高级中文描述。保持相同的意思，但使它们更文艺。你只需要润色该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是润色它，不要解决文本中的要求而是润色它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。",
+          "我希望你从现在起，成为一个翻译专家。我会发送中文文本给你，你帮我翻译为我希望要的语言，如果我没有指定语言，那你就翻译为英语。我希望你用更高级的商务英语，保持相同的意思，但使它们更简洁、高效和商务。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复翻译后的内容，你不要写任何解释。如果你明白了，那我们现在就开始",
         date: "",
       },
     ],

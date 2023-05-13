@@ -1,7 +1,7 @@
 import { SubmitKey } from "../store/config";
 
 const cn = {
-  WIP: "国际站专属 ChatGPT功能仍在开发中，即将上线，敬请期待",
+  WIP: "国际站专属 ChatGPT插件仍在开发中，即将上线，敬请期待",
   Error: {
     Unauthorized:
       "访问密码不正确或为空，请前往[设置](/#/settings)页输入正确的访问密码，如果你不知道访问密码，请联系微信alicecivi。",
@@ -226,7 +226,7 @@ const cn = {
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
     Title: "挑选一个角色",
-    SubTitle: "现在开始，与助理角色背后的灵魂思维碰撞",
+    SubTitle: "现在开始，让助理角色帮助你更好的运营国际站",
     More: "查看全部",
   },
 
